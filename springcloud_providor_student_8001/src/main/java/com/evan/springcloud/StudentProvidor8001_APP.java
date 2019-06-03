@@ -2,8 +2,7 @@ package com.evan.springcloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
-
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
  * Created by IntelliJ IDEA
@@ -13,7 +12,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
  * @description
  */
 @SpringBootApplication
-@EnableEurekaClient
+@EnableDiscoveryClient
 public class StudentProvidor8001_APP {
 
 	public static void main(String[] args) {

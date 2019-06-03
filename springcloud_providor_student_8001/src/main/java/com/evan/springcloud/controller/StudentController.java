@@ -20,7 +20,7 @@ public class StudentController {
 	@Autowired
 	private IStudentService studentService;
 
-	@GetMapping("/student/{id}")
+	@GetMapping(path = "/student/{id}",produces = "application/json;charset=UTF-8")
 	@ResponseBody
 	public Student findOneStudent(@PathVariable("id") Integer id){
 		return studentService.findOneById(id);
